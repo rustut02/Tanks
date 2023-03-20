@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/container">
+
+
+        <ImageView
+            android:id="@+id/myTank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/goldentank"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/btn_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/left"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/btn_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="170dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/right" />
+
+        <ImageView
+            android:id="@+id/btn_up"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/up"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/btn_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="210dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/down" />
+
+        <ImageView
+            android:id="@+id/btn_shot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="600dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/shoot"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/materials_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/editor_clear"
+            android:layout_margin="8dp"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:src="@drawable/ic_baseline_clear_24"/>
+
+        <ImageView
+            android:id="@+id/editor_brick"
+            android:layout_margin="8dp"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:src="@drawable/brick"/>
+
+        <ImageView
+            android:id="@+id/editor_concrete"
+            android:layout_margin="8dp"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:src="@drawable/concrete"/>
+
+        <ImageView
+            android:id="@+id/editor_grass"
+            android:layout_margin="8dp"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:src="@drawable/grass"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
